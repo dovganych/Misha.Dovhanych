@@ -10,11 +10,16 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<link href="css/style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-ua.css" rel="stylesheet">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,222 +33,195 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!----------------------------Header------------------------>
-  	<div class="navbar navbar-inverse navbar-fixed-top" id="header">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-				<span class="sr-only">Open navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<!--<span class="icon-bar"></span>-->
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html"><i class="fa fa-fort-awesome"></i></a>
-			</div>
-			<div class="collapse navbar-collapse" id="responsive-menu">
-				<ul class="nav navbar-nav">							
-					<li><a id="s-home" href="#home">Головна</a></li>
-					<li><a id="s-profile" href="#profile">Профіль</a></li>
-					<!--<li><a id="s-books"href="#books">Books</a></li>-->
-					<li><a id="s-contact"href="#contact">Контакти</a></li>
-					<li id="lang"><a href="index.html">EN</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                <span class="sr-only">Open navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="ua.html"><i class="fa fa-diamond"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="responsive-menu">
+                <ul class="nav navbar-nav">                         
+                    <li><a id="s-home" href="#home">Головна</a></li>
+                    <li><a id="s-profile" href="#profile">Профіль</a></li>
+                    <li><a id="s-contact"href="#contact">Контакти</a></li>
+                    <li id="lang"><a href="index.html">EN</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <!----------------------------Home------------------------>
-	<div id="home" class="container-fluid">
-		<div  id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000" >
-			
-			<ol class="carousel-indicators">
-				<li class="active" data-target="#carousel" data-slide-to="0"></li>
-				<li data-target="#carousel" data-slide-to="1"></li>
-				<li data-target="#carousel" data-slide-to="2"></li>
-				<li data-target="#carousel" data-slide-to="3"></li>
-			</ol>
-			
-			<div class="carousel-inner" role="listbox" >
-				<div class="item active">
-					<img src="image/slide_0.jpg" alt="" class="first-slide" width="100%" >
-						<div class="my-caption">
-							<h1>Привіт, я Міша Довганич</h1>
-						</div>
-				</div>
-				<div class="item">
-					<img src="image/slide_1.jpg" alt="" width="100%">
-					<div class="my-caption">
-						<a href="#profile" id="c-s-profile" class="btn btn-success my-button">Профіль</a>		
-					</div>
-				</div>
-				<!--<div class="item">
-					<img src="image/slide_2.jpg" alt="" width="100%">
-					<div class="my-caption">
-						<a href="#books" id="c-s-books" class="btn btn-success my-button">Книжки</a>
-					</div>
-				</div>-->
-				<div class="item">
-					<img src="image/slide_3.jpg" alt="" width="100%">
-					<div class="my-caption">
-						<a href="#contact" id="c-s-contact" class="btn btn-success my-button">Контакти</a>
-					</div>
-				</div>
-			</div>			
-			<a href="#carousel" class="left carousel-control" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a href="#carousel" class="right carousel-control" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-		</div>
-	</div>
+    <div id="home" class="container-fluid">
+        <div  id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000" >      
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0"></li>
+                <li class="active" data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>           
+            <div class="carousel-inner" role="listbox" >
+                <div class="item">
+                    <img src="image/sl-1-fred.jpg" alt="first slide" width="100%">
+                    <div class="my-caption">
+                        <a href="#profile" id="c-s-profile" class="btn btn-success my-button"><h3>ПРОФІЛЬ</h3></a>      
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="image/sl-0-fred.jpg" alt="main slide" class="first-slide" width="100%" >
+                        <div class="my-caption m-caption">
+                            <h1>Привіт, я Міша Довганич</h1>
+                        </div>
+                </div>
+                <div class="item">
+                    <img src="image/sl-2-fred.jpg" alt="second slide" width="100%">
+                    <div class="my-caption">
+                        <a href="#contact" id="c-s-contact" class="btn btn-success my-button"><h3>КОНТАКТИ</h3></a>
+                    </div>
+                </div>
+            </div>          
+            <a href="#carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
 <!----------------------------Profile------------------------>
-	<div class="container-fluid wow bounceInLeft" data-wow-duration="2s" id="profile">
-		<div class="row" id="education">
-			<div class="col-xs-4 col-md-4 col-sm-4">
-				<div>
-					<img src="image/boy.png" class="img-circle img-responsive" alt="" width="100%">
-				</div>
-			</div>
-			<div class="col-xs-8 col-md-8 col-sm-8">
-				<div class="wrap"> 					     
-					<div class="barGraph">
-					    <ul class="graph">
-					    	<h2 class="text-center">Навики</h2>
-					    	<h1><i class="fa fa-bar-chart fa-6"></i></h1>
-							<h3 class="text-left"><i class="fa fa-html5"></i>HTML5</h3>
-							<span class="graph-barBack">    
-					        	<li class="graph-bar" data-value="85"></li>
-					        </span>
-							<h3 class="text-left"><i class="fa fa-css3"></i>CSS3</h3>
-					      	<span class="graph-barBack">    
-					        	<li class="graph-bar" data-value="85"></li>
-					     	</span>
-							<h3 class="text-left"><i class="fa fa-magic"></i>JavaScript</h3>
-					      	<span class="graph-barBack">    
-					        	<li class="graph-bar" data-value="70"></li>
-					      	</span>
-							<h3 class="text-left">Bootstrap</h3>
-					      	<span class="graph-barBack">    
-					        	<li class="graph-bar" data-value="50"></li>
-					      	</span>
-					    </ul>
-					</div>
-				</div>
-			</div>
-		</div> 
-			<div class="row">
-			<h2 class="col-md-offset-1"><i class="fa fa-graduation-cap"></i>Освіта</h2>
-			</div>
-			<div class="row">
-				<ul class="col-md-offset-2">
-					<li>09.2010 – 2014 09.2010 – 2014 Національний університет "Львівська політехніка", Інститут Комп'ютерних технологій, Автоматики та Метрології, факультет Комп'ютра інженерія, степінь бакалавр.
-					</li>
-					<li>09.2014 – 2015  Національний університет "Львівська політехніка", Інститут Комп'ютерних технологій, Автоматики та Метрології, факультет Спеціалізовані комп'ютерні системи,степінь магістр.
-					</li>
-				</ul>
-			</div> 
-			<div class="row">
-			<h2 class="col-md-offset-1"><i class="fa fa-graduation-cap"></i>Мови</h2>
-			</div>
-			<div class="row">
-				<ul class="col-md-offset-2">
-				<li>Англійська( правопис – A2, розмовна – A2)</li>
-				<li>Російська(середній)</li>
-				<li>Українська(рідна)</li>
-				</ul>
-			
-			</div> 
-			<div class="row">
-			<h2 class="col-md-offset-1"><i class="fa fa-graduation-cap"></i>Досвіт роботи</h2>
-			</div>
-			<div class="row">
-				<ul class="col-md-offset-2">
-					<li>Немає(</li>
-				</ul>
-			</div> 
-			<div class="row">
-			<h2 class="col-md-offset-1"><i class="fa fa-graduation-cap"></i>Сертифікати</h2>
-			</div>
-			<div class="row">
-				<ul class="col-md-offset-2">
-					<li>04.02.2016-07.03.2016 Soft Serve HTML5/ CSS3/ JavaScript Fundamentals</li>
-				</ul>
-			</div> 
-			<div class="row">
-			<h2 class="col-md-offset-1"><i class="fa fa-graduation-cap"></i>Мета</h2>
-			</div>
-			<div class="row">
-				<ul class="col-md-offset-2">
-					<li>Робота з попереднім навчанням і стажування.</li>
-				</ul>
-			</div> 
-			<div class="row">
-			<h2 class="col-md-offset-1"><i class="fa fa-graduation-cap"></i>Дододаткові навики</h2>
-			</div>
-			<div class="row">
-				<ul class="col-md-offset-2">
-					<li>Робота з Windows, MS Office.</li>
-				</ul>
-			</div> 
- 	</div>
- 	<!----------------------------Books------------------------>
-	<!--<div class="container-fluid wow bounceInRight" id="books">
-		<div class="row">
-			<h1 class="text-center"><i class="fa fa-book fa-2x"></i>Книги</h1>
-			
-		<a class="text-center" href="http://www.livelib.ru/reader/DannetteAsking" target="_blank" ><h3>Check my profile on LiveLib</h3></a>
-	</div>	
-	</div>	-->
+    <div class="container-fluid wow bounceInLeft" data-wow-duration="2s" id="profile">
+        <div class="row" id="education">
+            <div id="p-photo" class="container">
+                <img src="image/boy.png" class="img-circle img-responsive" alt="personal photo" width="215px" height="215px">
+            </div >
+            <div id="skill">
+                <div class="wrap">
+                        <h2 class="text-center">Навички</h2>
+                </div> 
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-sm-12">                      
+                        <div class="barGraph">
+                            <ul class="graph">                              
+                                <h1><i class="fa fa-bar-chart fa-6"></i></h1>
+                                    <h3 class="text-left"><i class="fa fa-html5"></i>HTML5</h3>
+                                <span class="graph-barBack">    
+                                    <li class="graph-bar" data-value="85"></li>
+                                </span>
+                                <h3 class="text-left"><i class="fa fa-css3"></i>CSS3</h3>
+                                <span class="graph-barBack">    
+                                    <li class="graph-bar" data-value="85"></li>
+                                </span>
+                                <h3 class="text-left"><i class="fa fa-magic"></i>JavaScript</h3>
+                                <span class="graph-barBack">    
+                                    <li class="graph-bar" data-value="70"></li>
+                                </span>
+                                <h3 class="text-left">Bootstrap</h3>
+                                <span class="graph-barBack">    
+                                    <li class="graph-bar" data-value="50"></li>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                <h2 class="col-md-offset-1" ><i class="fa fa-university"></i>Освіта</h2>
+                </div>
+                <div class="row">
+                    <ul class="col-md-offset-2" >
+                        <li>09.2010 – 2014 09.2010 – 2014 Національний університет "Львівська політехніка", Інститут Комп'ютерних технологій, Автоматики та Метрології, факультет Комп'ютра інженерія, степінь бакалавр.
+                        </li>
+                        <li>09.2014 – 2015  Національний університет "Львівська політехніка", Інститут Комп'ютерних технологій, Автоматики та Метрології, факультет Спеціалізовані комп'ютерні системи,степінь магістр.
+                        </li>
+                    </ul>
+                </div> 
+                <div class="row">
+                <h2 class="col-md-offset-1"><i class="fa fa-language"></i>Мови</h2>
+                </div>
+                <div class="row">
+                    <ul class="col-md-offset-2">
+                        <li>Англійська( правопис – A2, розмовна – A2)</li>
+                        <li>Російська(середній)</li>
+                        <li>Українська(рідна)</li>
+                    </ul>
+                </div> 
+                <div class="row">
+                <h2 class="col-md-offset-1"><i class="fa fa-battery-empty"></i>Досвіт роботи</h2>
+                </div>
+                <div class="row">
+                    <ul class="col-md-offset-2">
+                        <li>Немає(</li>
+                    </ul>
+                </div> 
+                <div class="row">
+                <h2 class="col-md-offset-1"><i class="fa fa-battery-quarter"></i>Сертифікат</h2>
+                </div>
+                <div class="row">
+                    <ul class="col-md-offset-2">
+                        <li>04.02.2016-07.03.2016 Soft Serve HTML5/ CSS3/ JavaScript Fundamentals</li>
+                    </ul>
+                </div> 
+                <div class="row">
+                <h2 class="col-md-offset-1"><i class="fa fa-search"></i>Мета</h2>
+                </div>
+                <div class="row">
+                    <ul class="col-md-offset-2">
+                        <li>Робота з попереднім навчанням і стажування.</li>
+                    </ul>
+                </div> 
+                <div class="row">
+                <h2 class="col-md-offset-1"><i class="fa fa-plus"></i>Додаткові навички</h2>
+                </div>
+                <div class="row">
+                    <ul class="col-md-offset-2">
+                        <li>Робота з Windows, MS Office.</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
 <!----------------------------Contact------------------------>
-	<div class="container-fluid wow bounceInUp" data-wow-duration="2s" id="contact">
-		<div id="main">
-		    <div class="header">
-		        <h1>Звяжись зі мною</h1>
-		    </div>
-		    <div class="form">
-		        <form action="#">
-		          	<div class="row indent my-item">		            
-		              	<input type="text" name="name" placeholder="Повне імя" class="full item" spellcheck="false">
-		            </div>
-		            <div class="row indent my-item">
-		              	<input type="text" name="email" placeholder="Email" class="full item" spellcheck="false">	           
-		          	</div>
-		          	<div class="row indent my-item">
-		            	<input type="text" name="subject" placeholder="Тема" class="full" spellcheck="false">
-		          	</div>
-		          	<div class="row indent my-item">
-		            	<textarea name="content" class="full" placeholder="Повідомлення"></textarea>
-		          	</div>
-		          	<div class="row">
-		            	<button type="submit">Надіслати</button>
-		          	</div>
-		        </form>
-		    </div>
-		</div>
-	</div>
+    <div class="container-fluid wow bounceInUp" data-wow-duration="2s" id="contact">
+        <div id="main">
+            <div class="form">
+            <h1>Звяжись зі мною</h1>
+                <form action="#" method="POST">
+                    <div class="row indent my-item">                    
+                        <input type="text" name="name" placeholder="Повна імя" class="full item" spellcheck="false">
+                    </div>
+                    <div class="row indent my-item">
+                        <input type="text" name="email" placeholder="Email" class="full item" spellcheck="false">                  
+                    </div>
+                    <div class="row indent my-item">
+                        <input type="text" name="subject" placeholder="Тема" class="full" spellcheck="false">
+                    </div>
+                    <div class="row indent my-item">
+                        <textarea name="content" class="full" placeholder="Повідомлення"></textarea>
+                    </div>
+                    <div class="row">
+                        <button type="submit" id="mysend">Надіслати</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row" id="links">            
+                <a  class="btn link-button" href="https://www.facebook.com/misha.dovhanych5" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>           
+                <a  class="btn link-button" href="https://vk.com/id69763329" target="_blank"><i class="fa fa-vk fa-2x"></i></a>         
+                <a  class="btn link-button" href="https://github.com/dovganych" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+            </div>
+        </div>  
+    </div>
 <!----------------------------Footer------------------------>
-	<div class="footer" id="footer">
-	<div class="navbar" style=" margin:0px;">
-		<div class="container">
-				<div class="navbar-header">
-					<p class="navbar-brand"><i class="fa fa-copyright"></i>Михайла Довганича</p>
-				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav " id="links">							
-						<li><a href="https://www.facebook.com/misha.dovhanych5" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-				    	<li><a href="https://vk.com/id69763329" target="_blank"><i class="fa fa-vk fa-2x"></i></a></li>
-						<li><a href="https://github.com/dovganych" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="footer text-center">    
+        <h3><i class="fa fa-copyright"></i>михайла довганича</h3>
+    </div>
 <!---->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

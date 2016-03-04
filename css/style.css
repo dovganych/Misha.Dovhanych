@@ -1,38 +1,29 @@
+*{font-family: 'Josefin Sans', sans-serif;}
 #header
 {
 	margin:0px;
+  opacity:0.8;
+}
 
+#profile
+{ 
+	padding-bottom: 20px;
+  color:#4d5366;
+}
+.footer
+{
+	background-color:#2B2B2B;
+  color: #fff;
+}
+div.footer>h3{
+  margin:0px;
+  padding:5px;
 }
 #home
 {
   margin:0px;
   padding: 0px;
-}
-#books
-{
-  background-color:#ffccff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-}
-#profile
-{
-
-	
-}
-#footer
-{
-	background-color:#1b6698;
-}
-#contact
-{
-	background-color: #3498db;
-	height:700px;
-}
-#education
-{	
-	margin-top: 50px;
-	height: 550px;
+  font-weight: 900;
 }
 .my-caption {
   position: absolute;
@@ -46,39 +37,47 @@
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
-.books-t
-{
-  margin: 0 0 10px !important;
-  font-size: 25px !important;
-  line-height: 30px !important;
-   font-weight: normal !important; 
-   font-style: italic !important;
+.m-caption{bottom: 43%;}
+#education
+{ 
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.books
+#skill>div>ul>li{ color: black; font-weight:700;}
+#p-photo
 {
-  background: #ffffff !important;
-  font-family: 'Trebuchet MS', Tahoma, Helvetica, Arial, Verdana, sans-serif !important;
-  font-size: 14px !important;
-  line-height: 135% !important; 
-  border-bottom: solid 1px #bfbfbf !important;
   height: 400px;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background: #507FAB;
+  border-bottom-right-radius:15px;
+  border-bottom-left-radius:15px;
+}
+#contact
+{
+  background-color: #3498db;
+  height:700px;
+}
+
+.wrap
+{
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
 #lang 
 {
   position: absolute;
   left:95%;
 }
-#links
-{
-  position: absolute;
-  left:85%;
-}
+
 /*--------------------------------------------*/
 
 
 .my-button {
-  font-size:16px;
+ 
   background:rgba(242, 242, 242,0.1);
   border:2px solid white;
   height:100px;
@@ -88,44 +87,29 @@
   display: flex;
   align-items: center;
   justify-content:center;
+  transform:scale(1,1);
+  transition: 1s;
 }
-
 .my-button:hover {
   
   border:2px solid white;
   background:rgba(242, 242, 242,0.4);
   transform:scale(1.05,1.05);
-  /*box-shadow:0px 0px 10px rgba(176,54,54,.9);*/
+  font-weight: bold !important;
+  transition: 2s;
+  box-shadow:0px 0px 10px rgba(208, 232, 238, 0.9);
 }
 .my-button:active {
-  
- background:rgba(242, 242, 242,0.6) !important; 
+ border:2px solid black !important; 
+ background:rgba(242, 242, 242,0.4) !important; 
+}
+.my-button:visited
+{
+  border:2px solid white !important; 
+  background:rgba(242, 242, 242,0.4);
 }
 
 /*--------------------------------------------*/
-
-/* Mixings &  Variables */
-.clearfix,
-.clearfix:before,
-.clearfix:after {
-  display: block;
-  content: " ";
-  clear: both;
-  zoom: 1;
-}
-/* Resets */
-.wrap {
-  margin: 0 auto;
-  
-  max-width: 1200px;
-}
-/* Bar Graph Class */
-.barGraph {
-  position: relative;
-  width: 100%;
-  height: auto;
-  
-}
 .graph {
   position: relative;
   list-style-type: none;
@@ -136,22 +120,21 @@
 }
 .graph-barBack {
   border-radius: 2px;
-  background: #DAE4EB;
+  background: #1C2C3B;
  
   margin-bottom: 30px;
   display: block;
 }
 .graph-bar {
   background-color: #59BAC0;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
   border-radius: 2px;
   cursor: pointer;
   margin-bottom: 10px;
   position: relative;
-  /*z-index: 9999;*/
   display: block;
   height: 20px;
   width: 0%;
@@ -188,45 +171,32 @@
   position: absolute;
   margin-right: 10px;	
   left: -70px;
-  /*z-index: 9999;*/
 }
-
 /*--------------------------------------------*/
 input, textarea:focus {
   outline: none;
 }
-
 .my-item {
   margin-bottom: 20px;
 }
-
 .full {
   width: 100%;
 }
-
 .indent {
   padding-right: 15px;
   padding-left: 15px;
 }
-
 #main {
   width: 40%;
   margin: 0 auto;
   text-align: center;
 }
-
-.header {
-  margin-top: 10%;
-}
-.header h1 {
-  display: table;
-  margin: 0 auto;
+div.form>h1 {
+ 
   font-size: 4em;
-  border-bottom: 2px solid #ebf5fb;
   font-weight: normal;
   color: #ebf5fb;
 }
-
 .form {
   margin-top: 5%;
 }
@@ -277,4 +247,77 @@ input, textarea:focus {
 }
 
 
+.link-button {
+  background:rgba(242, 242, 242,0.1);
+  border:2px solid white;
+  height:30px;
+  width: 30px;
+  padding:20px;
+  cursor:pointer;
+  border-radius:15px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.link-button:hover {
+  
+  border:2px solid white;
+  background:rgba(242, 242, 242,0.4);
+  transform:scale(1.05,1.05);
+  box-shadow:0px 0px 10px rgba(208, 232, 238, 0.9);
+}
+.link-button:active {
+ border:2px solid black !important; 
+ background:rgba(242, 242, 242,0.4) !important; 
+}
+#links
+{
+  display: inline-flex;
+}
+a.btn.link-button
+{
+   margin-left:10px;
+   margin-right:10px;
+}
+#contact
+{
+  background-color: #3498db;
+}
+.back-contact
+{
+  background-color: #000;
+}
+.wrap
+{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+@media only screen and (max-width: 767px)
+{
+#lang 
+{
+  position: inherit;
+}
+}
+@media only screen and (max-width: 600px)
+{
+.my-caption {bottom: 35%;}
+.my-button{ height: 70px; }
+div.form>h1 {font-size: 3em;}
+#main {
+  width: 70%;
+}
+}
+@media only screen and (max-width: 360px)
+{
+  a.btn.link-button{margin-left:2px;margin-right:2px;}
+  link-button{height:20px;width: 20px;}
+  .my-button{ height: 50px;}
+  .my-caption{ bottom: 25%;}
+  div.form>h1 {font-size: 2em;}
+  #main {width: 90%;}
+  .m-caption{bottom:15%;}
+  #p-photo{height:250px;}
 
+}
