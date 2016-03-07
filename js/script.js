@@ -49,3 +49,18 @@ $(document).ready(function (){
         $("#header").css({"opacity":"1", "transition": "all,1s"});
     });
 });
+
+$(document).ready(function() {
+    $("#form").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "index.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("message sent");
+            $("#form").trigger("reset");
+        });
+        return false;
+    }); 
+});

@@ -41,6 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html"><i class="fa fa-diamond"></i></a>
             </div>
@@ -49,6 +50,7 @@
                     <li><a id="s-home" href="#home">Home</a></li>
                     <li><a id="s-profile" href="#profile">Profile</a></li>
                     <li><a id="s-contact"href="#contact">Contact</a></li>
+                    <li><a href="file/Mykhailo_Dovhanych_CV.pdf"  download>CV</a></li>
                     <li id="lang"><a href="ua.html">UA</a></li>
                 </ul>
             </div>
@@ -94,7 +96,7 @@
     <div class="container-fluid wow bounceInLeft" data-wow-duration="2s" id="profile">
         <div class="row" id="education">
             <div id="p-photo" class="container">
-                <img src="image/boy.png" class="img-circle img-responsive" alt="personal photo" width="215px" height="215px">
+                <img src="image/boy.jpg" class="img-circle img-responsive" alt="personal photo" width="315px" height="515px">
             </div >
             <div id="skill">
                 <div class="wrap">
@@ -175,7 +177,7 @@
                 </div>
                 <div class="row">
                     <ul class="col-md-offset-2">
-                        <li>Windows, MS Office.</li>
+                        <li>Windows, MS Office. https://script.google.com/macros/s/AKfycbxMP8Mq6_nHrXnxQ9b6AjGw6d2la-wDXNmFv9wc0UKzv7ALUwZH/exec</li>
                     </ul>
                 </div> 
             </div>
@@ -185,22 +187,22 @@
     <div class="container-fluid wow bounceInUp" data-wow-duration="2s" id="contact">
         <div id="main">
             <div class="form">
-            <h1>Contact me</h1>
-                <form action="#" method="POST" >
+            <h1>Contact me </h1>
+                <form  method="POST" id="form">
                     <div class="row indent my-item">                    
-                        <input type="text" name="name" placeholder="Full name" class="full item" spellcheck="false">
+                        <input type="text" name="name" id="name" placeholder="Full name" class="full item" spellcheck="false" required>
                     </div>
                     <div class="row indent my-item">
-                        <input type="text" name="email" placeholder="Email" class="full item" spellcheck="false">                  
+                        <input type="text" name="email" id="email"  placeholder="Email" class="full item" spellcheck="false" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>                  
                     </div>
                     <div class="row indent my-item">
-                        <input type="text" name="subject" placeholder="Subject" class="full" spellcheck="false">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" class="full" spellcheck="false">
                     </div>
                     <div class="row indent my-item">
-                        <textarea name="content" class="full" placeholder="Message"></textarea>
+                        <textarea name="content" id="content" class="full" placeholder="Message" required></textarea>
                     </div>
                     <div class="row">
-                        <button type="submit" id="mysend">Send</button>
+                        <button type="submit" value="Send">Send</button>
                     </div>
                 </form>
             </div>

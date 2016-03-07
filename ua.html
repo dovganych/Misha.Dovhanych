@@ -42,6 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="ua.html"><i class="fa fa-diamond"></i></a>
             </div>
@@ -50,6 +51,7 @@
                     <li><a id="s-home" href="#home">Головна</a></li>
                     <li><a id="s-profile" href="#profile">Профіль</a></li>
                     <li><a id="s-contact"href="#contact">Контакти</a></li>
+                    <li><a href="file/Mykhailo_Dovhanych_CV.pdf"  download>CV</a></li>
                     <li id="lang"><a href="index.html">EN</a></li>
                 </ul>
             </div>
@@ -95,7 +97,7 @@
     <div class="container-fluid wow bounceInLeft" data-wow-duration="2s" id="profile">
         <div class="row" id="education">
             <div id="p-photo" class="container">
-                <img src="image/boy.png" class="img-circle img-responsive" alt="personal photo" width="215px" height="215px">
+                <img src="image/boy.jpg" class="img-circle img-responsive" alt="personal photo" width="315px" height="515px">
             </div >
             <div id="skill">
                 <div class="wrap">
@@ -143,8 +145,8 @@
                 <div class="row">
                     <ul class="col-md-offset-2">
                         <li>Англійська( правопис – A2, розмовна – A2)</li>
-                        <li>Російська(середній)</li>
-                        <li>Українська(рідна)</li>
+						<li>Російська(середній)</li>
+						<li>Українська(рідна)</li>
                     </ul>
                 </div> 
                 <div class="row">
@@ -186,22 +188,22 @@
     <div class="container-fluid wow bounceInUp" data-wow-duration="2s" id="contact">
         <div id="main">
             <div class="form">
-            <h1>Звяжись зі мною</h1>
-                <form action="#" method="POST">
+             <h1>Звяжись зі мною</h1>
+               <form id="form">
                     <div class="row indent my-item">                    
-                        <input type="text" name="name" placeholder="Повне імя" class="full item" spellcheck="false">
+                        <input type="text" name="name" id="name" placeholder="Повне імя" class="full item" spellcheck="false" required>
                     </div>
                     <div class="row indent my-item">
-                        <input type="text" name="email" placeholder="Email" class="full item" spellcheck="false">                  
+                        <input type="text" name="email" id="email"  placeholder="Email" class="full item" spellcheck="false" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>                  
                     </div>
                     <div class="row indent my-item">
-                        <input type="text" name="subject" placeholder="Тема" class="full" spellcheck="false">
+                        <input type="text" name="subject" id="subject" placeholder="Тема" class="full" spellcheck="false">
                     </div>
                     <div class="row indent my-item">
-                        <textarea name="content" class="full" placeholder="Повідомлення"></textarea>
+                        <textarea name="content" id="content" class="full" placeholder="Повідомлення" required></textarea>
                     </div>
                     <div class="row">
-                        <button type="submit" id="mysend">Надіслати</button>
+                        <button type="submit" value="Send">Надіслати</button>
                     </div>
                 </form>
             </div>
@@ -214,7 +216,7 @@
     </div>
 <!----------------------------Footer------------------------>
     <div class="footer text-center">    
-        <h3><i class="fa fa-copyright"></i>михайло довганич</h3>
+        <h3><i class="fa fa-copyright"></i>михайла довганича</h3>
     </div>
 <!---->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -222,6 +224,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
